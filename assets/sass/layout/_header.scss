@@ -1,0 +1,76 @@
+.navegador{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+
+.navegador__logo{
+	display: flex;
+
+	
+	p {
+	position: relative;
+    font-size: 70%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: 0.5em;
+	}
+}
+
+.navegador__iconos{
+	width: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.contenedor__nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+
+.header-banner{
+	height: 200px;
+	overflow: hidden; 
+	display: flex;
+	align-items: center;
+}
+
+.usuario{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 576px) {
+  .usuario {
+    justify-content: center;
+    
+  }
+}
+
+
+@media (max-width: 575.98px) {
+	
+	.navegador__iconos i {
+  	display: none;
+	}
+
+	.navegador__logo p {
+	display: none;
+	}
+
+	.botones button{
+	display: none;
+	}
+
+}
